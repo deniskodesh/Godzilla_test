@@ -8,12 +8,9 @@ jobs:
     - name: OpenStack Chaos Action
       uses: Viaceslav-Kodesh/Godzilla@master
       with:
-          DELAY: ${{10}} #minutes
-          PERCENT: ${{100}}
-          OS_USERNAME: ${{secrets.OS_USERNAME}}
-          OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
-          OS_PASSWORD: ${{secrets.OS_PASSWORD}}
-          OS_TENANT_NAME: ${{secrets.OS_TENANT_NAME}}
-          OS_PROJECT_NAME: ${{secrets.OS_PROJECT_NAME}}
-          OS_NOVA_VERSION: ${{secrets.OS_NOVA_VERSION}}
-          OS_USER_DOMAIN_NAME: ${{secrets.OS_USER_DOMAIN_NAME}}
+        authUrl: ${{ secrets.OS_AUTH_URL }}
+        projectName: ${{ secrets.OS_USERNAME }}
+        projectDomainName: ${{ secrets.PROJECT_DOMAIN_NAME }}
+        userName: ${{ secrets.OS_USERNAME }}
+        DomainName: ${{ secrets.OS_USER_DOMAIN_NAME }}
+        userPassword: ${{ secrets.OS_PASSWORD }}
