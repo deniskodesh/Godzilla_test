@@ -9,7 +9,7 @@ jobs:
       uses: Viaceslav-Kodesh/Godzilla@master
       env:
           DELAY: ${{1}}  #minutes
-          PERCENT: ${{30}}
+          PERCENT: ${{40}}
           OS_USERNAME: ${{secrets.OS_USERNAME}}
           OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
           OS_PASSWORD: ${{secrets.OS_PASSWORD}}
